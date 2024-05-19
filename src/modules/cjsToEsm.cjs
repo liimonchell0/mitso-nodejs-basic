@@ -1,16 +1,16 @@
 const path = require('path');
 const { release, version } = require('os');
 const { createServer: createServerHttp } = require('http');
-require('./files/c');
+require('C:/RIS/mitso-nodejs-basic/src/modules/files/c');
 
 const random = Math.random();
 
 let unknownObject;
 
 if (random > 0.5) {
-    unknownObject = require('./files/a.json');
+    unknownObject = require('C:/RIS/mitso-nodejs-basic/src/modules/files/a.json');
 } else {
-    unknownObject = require('./files/b.json');
+    unknownObject = require('C:/RIS/mitso-nodejs-basic/src/modules/files/b.json');
 }
 
 console.log(`Release ${release()}`);
@@ -37,4 +37,3 @@ module.exports = {
     unknownObject,
     myServer,
 };
-
