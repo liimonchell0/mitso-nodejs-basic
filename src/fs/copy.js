@@ -40,7 +40,7 @@ const copy = async () => {
 
     // Начинаем копирование
     copyRecursive(sourceDir, destDir);
-    console.log('Directory has been copied successfully');
+    console.log('Файлы скопированы');
 };
 
 
